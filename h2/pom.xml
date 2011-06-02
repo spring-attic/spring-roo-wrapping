@@ -15,8 +15,8 @@
 
     <properties>
         <pkgArtifactId>h2</pkgArtifactId>
-        <pkgVersion>1.3.148</pkgVersion>
-        <osgiVersion>${pkgVersion}.0010</osgiVersion>
+        <pkgVersion>1.3.155</pkgVersion>
+        <osgiVersion>${pkgVersion}.0020</osgiVersion>
         <pkgVendor>H2 Database Engine</pkgVendor>
         <pkgDocUrl>http://www.h2database.com</pkgDocUrl>
         <pkgLicense>http://www.h2database.com/html/license.html</pkgLicense> 
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>${pkgArtifactId}</artifactId>
-            <version>1.3.148</version>
+            <version>1.3.155</version>
             <optional>true</optional>
         </dependency>
     </dependencies>

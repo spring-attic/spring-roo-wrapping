@@ -15,8 +15,8 @@
 
     <properties>
         <pkgArtifactId>postgresql</pkgArtifactId>
-        <pkgVersion>8.4.701</pkgVersion>
-        <osgiVersion>${pkgVersion}.0010</osgiVersion>
+        <pkgVersion>8.4.702</pkgVersion>
+        <osgiVersion>${pkgVersion}.0020</osgiVersion>
         <pkgVendor>The PostgreSQL Global Development Group</pkgVendor>
         <pkgDocUrl>http://jdbc.postgresql.org/</pkgDocUrl>
         <pkgLicense>http://jdbc.postgresql.org/license.html</pkgLicense> <!-- It's the BSD license -->
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>postgresql</groupId>
             <artifactId>${pkgArtifactId}</artifactId>
-            <version>8.4-701.jdbc3</version>
+            <version>8.4-702.jdbc3</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
