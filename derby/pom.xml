@@ -39,7 +39,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Import-Package>org.apache.xml.utils.*;resolution:=optional,org.apache.xalan.*;resolution:=optional,org.apache.xpath.*;resolution:=optional,org.apache.derby.impl.drda.*;resolution:=optional,*</Import-Package>
+                        <Import-Package>com.ibm.jvm.*;resolution:=optional,org.apache.xml.utils.*;resolution:=optional,org.apache.xalan.*;resolution:=optional,org.apache.xpath.*;resolution:=optional,org.apache.derby.impl.drda.*;resolution:=optional,*</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
