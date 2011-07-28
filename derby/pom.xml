@@ -15,8 +15,8 @@
 
     <properties>
         <pkgArtifactId>derby</pkgArtifactId>
-        <pkgVersion>10.8.1.2</pkgVersion>
-        <osgiVersion>${pkgVersion}.0030</osgiVersion>
+        <pkgVersion>10.8.1</pkgVersion>
+        <osgiVersion>${pkgVersion}.0020</osgiVersion>
         <pkgVendor>Apache Derby</pkgVendor>
         <pkgDocUrl>http://db.apache.org/derby/</pkgDocUrl>
         <pkgLicense>http://db.apache.org/derby/license.html</pkgLicense> 
