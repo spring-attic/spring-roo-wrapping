@@ -11,22 +11,22 @@
     <version>${osgiVersion}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
-    <description>#jdbcdriver driverclass:com.mysql.jdbc.Driver. This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
+    <description>Derby Client #jdbcdriver driverclass:org.apache.derby.jdbc.ClientDriver. This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
 
     <properties>
-        <pkgArtifactId>mysql-connector-java</pkgArtifactId>
-        <pkgVersion>5.1.17</pkgVersion>
-        <osgiVersion>${pkgVersion}.0020</osgiVersion>
-        <pkgVendor>MySQL</pkgVendor>
-        <pkgDocUrl>http://www.mysql.com/</pkgDocUrl>
-        <pkgLicense>http://www.mysql.com/about/legal/licensing/oem/</pkgLicense> <!-- Based on GPL license -->
+        <pkgArtifactId>derbyclient</pkgArtifactId>
+        <pkgVersion>10.8.1.2</pkgVersion>
+        <osgiVersion>${pkgVersion}.0001</osgiVersion>
+        <pkgVendor>Apache Derby</pkgVendor>
+        <pkgDocUrl>http://db.apache.org/derby/</pkgDocUrl>
+        <pkgLicense>http://db.apache.org/derby/license.html</pkgLicense> 
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>mysql</groupId>
+            <groupId>org.apache.derby</groupId>
             <artifactId>${pkgArtifactId}</artifactId>
-            <version>${pkgVersion}</version>
+            <version>10.8.1.2</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -39,7 +39,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Import-Package>javax.xml.transform.stax.*;resolution:=optional,javax.xml.stream.*;resolution:=optional,org.apache.commons.logging.*;resolution:=optional,org.apache.log4j.*;resolution:=optional,org.jboss.*;resolution:=optional,com.mchange.*;resolution:=optional,*</Import-Package>
+                        <Import-Package>com.ibm.jvm.*;resolution:=optional,org.apache.xml.utils.*;resolution:=optional,org.apache.xalan.*;resolution:=optional,org.apache.xpath.*;resolution:=optional,org.apache.derby.impl.drda.*;resolution:=optional,*</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
