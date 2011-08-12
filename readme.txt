@@ -27,6 +27,11 @@ To perform wrapping you need:
  * Internet access so that Maven can download required dependencies
  * Upload privileges to the above location
  * GPG setup (see main Spring Roo readme.txt for instructions)
+ 
+ If you want to host an OSGi-compliant jar that
+ does not need wrapping at http://spring-roo-repository.springsource.org/release,
+ be sure to create an asc file of the jar and pom.xml using 
+ gpg --ab <filename> and upload the asc files as well.
 
 ======================================================================
 GIT POLICIES
