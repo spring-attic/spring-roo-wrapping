@@ -15,8 +15,8 @@
 
     <properties>
         <pkgArtifactId>mysql-connector-java</pkgArtifactId>
-        <pkgVersion>5.1.17</pkgVersion>
-        <osgiVersion>${pkgVersion}.0020</osgiVersion>
+        <pkgVersion>5.1.18</pkgVersion>
+        <osgiVersion>${pkgVersion}.0001</osgiVersion>
         <pkgVendor>MySQL</pkgVendor>
         <pkgDocUrl>http://www.mysql.com/</pkgDocUrl>
         <pkgLicense>http://www.mysql.com/about/legal/licensing/oem/</pkgLicense> <!-- Based on GPL license -->
