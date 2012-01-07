@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>firebird</pkgArtifactId>
         <pkgVersion>2.1.6</pkgVersion>
-        <osgiVersion>${pkgVersion}.0010</osgiVersion>
+        <osgiVersion>${pkgVersion}.0020</osgiVersion>
         <pkgVendor>The Firebird Project</pkgVendor>
         <pkgDocUrl>http://www.firebirdsql.org/</pkgDocUrl>
         <pkgLicense><![CDATA[http://www.firebirdsql.org/index.php?op=doc&amp;id=idpl]]></pkgLicense> 
@@ -53,7 +53,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Import-Package>javax.resource.*;resolution:=optional,com.sun.*;resolution:=optional,org.apache.*;resolution:=optional,sun.io.*;resolution:=optional,*</Import-Package>
+                        <Import-Package>com.sun.*;resolution:=optional,org.apache.*;resolution:=optional,sun.io.*;resolution:=optional,*</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
