@@ -15,7 +15,7 @@
 
     <properties>
         <pkgArtifactId>postgresql</pkgArtifactId>
-        <pkgVersion>9.0.801</pkgVersion>
+        <pkgVersion>9.1-901</pkgVersion>
         <osgiVersion>${pkgVersion}.0001</osgiVersion>
         <pkgVendor>The PostgreSQL Global Development Group</pkgVendor>
         <pkgDocUrl>http://jdbc.postgresql.org/</pkgDocUrl>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>postgresql</groupId>
             <artifactId>${pkgArtifactId}</artifactId>
-            <version>9.0-801.jdbc3</version>
+            <version>9.1-901.jdbc3</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
