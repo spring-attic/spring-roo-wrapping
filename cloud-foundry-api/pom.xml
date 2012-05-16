@@ -18,6 +18,14 @@
         <pkgVersion>0.0.1.A1-ROO</pkgVersion>
         <pkgVendor>VMware, Inc</pkgVendor>
     </properties>
+    
+    <repositories>
+        <repository>
+            <id>spring-roo-s3</id>
+            <name>Spring Roo S3 Bucket</name>
+            <url>s3://spring-roo-repository.springsource.org/release</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
