@@ -7,8 +7,8 @@
 		<version>1.1.5.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
-	<artifactId>${pom.groupId}.cloud-foundry-api</artifactId>
-    <version>${osgiVersion}</version>
+	<artifactId>org.springframework.roo.wrapping.cloud-foundry-api</artifactId>
+    <version>0.0.1.0010</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - Cloud Foundry API</name>
     <description>Cloud Foundry Java client API. This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
@@ -16,7 +16,6 @@
     <properties>
         <pkgArtifactId>AppCloudClient</pkgArtifactId>
         <pkgVersion>0.0.1.A1-ROO</pkgVersion>
-        <osgiVersion>0.0.1.0010</osgiVersion>
         <pkgVendor>VMware, Inc</pkgVendor>
     </properties>
 
