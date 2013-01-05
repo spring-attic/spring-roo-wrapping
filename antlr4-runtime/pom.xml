@@ -14,18 +14,18 @@
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
 
     <properties>
-        <pkgArtifactId>antlr-java-parser</pkgArtifactId>
-        <pkgVersion>1.0.3</pkgVersion>
+        <pkgArtifactId>antlr4-runtime</pkgArtifactId>
+        <pkgVersion>4.0-rc-1</pkgVersion>
         <osgiVersion>${pkgVersion}.0001</osgiVersion>
-        <pkgVendor>Antlr Java Parser Project</pkgVendor>
-        <pkgDocUrl>https://github.com/antlrjavaparser/antlr-java-parser/wiki</pkgDocUrl>
-        <pkgLicense>http://www.gnu.org/licenses/lgpl-3.0.txt</pkgLicense>
+        <pkgVendor>ANTLR 4 Runtime</pkgVendor>
+        <pkgDocUrl>http://www.antlr.org/wiki/display/ANTLR4/Home</pkgDocUrl>
+        <pkgLicense>https://raw.github.com/antlr/antlr4/master/LICENSE.txt</pkgLicense>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.github.antlrjavaparser</groupId>
-            <artifactId>antlr-java-parser</artifactId>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
             <version>${pkgVersion}</version>
         </dependency>
     </dependencies>
@@ -38,8 +38,8 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>com.github.antlrjavaparser.*</Export-Package>
-                        <Import-Package>org.antlr.v4.runtime.tree.gui;resolution:=optional,org.antlr.v4.runtime.*</Import-Package>
+                        <Export-Package>!org.antlr.v4.runtime.tree.gui,org.antlr.v4.runtime.*</Export-Package>
+                        <Import-Package>org.antlr.v4.runtime.tree.gui;resolution:=optional,*</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
