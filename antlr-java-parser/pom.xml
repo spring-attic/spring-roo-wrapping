@@ -15,7 +15,7 @@
 
     <properties>
         <pkgArtifactId>antlr-java-parser</pkgArtifactId>
-        <pkgVersion>1.0.3</pkgVersion>
+        <pkgVersion>1.0.5</pkgVersion>
         <osgiVersion>${pkgVersion}.0001</osgiVersion>
         <pkgVendor>Antlr Java Parser Project</pkgVendor>
         <pkgDocUrl>https://github.com/antlrjavaparser/antlr-java-parser/wiki</pkgDocUrl>
