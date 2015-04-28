@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.springframework.roo</groupId>
 		<artifactId>wrapping</artifactId>
-		<version>1.1.5.RELEASE</version>
+		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
 	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>jtds</pkgArtifactId>
         <pkgVersion>1.2.4</pkgVersion>
-        <osgiVersion>${pkgVersion}.0010</osgiVersion>
+        <osgiVersion>${pkgVersion}.0011</osgiVersion>
         <pkgVendor>The jTDS Project</pkgVendor>
         <pkgDocUrl>http://jtds.sourceforge.net/</pkgDocUrl>
         <pkgLicense>http://jtds.sourceforge.net/license.html</pkgLicense> <!-- LGPL -->

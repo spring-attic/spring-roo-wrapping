@@ -4,11 +4,11 @@
 	<parent>
 		<groupId>org.springframework.roo</groupId>
 		<artifactId>wrapping</artifactId>
-		<version>1.1.5.RELEASE</version>
+		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
 	<artifactId>org.springframework.roo.wrapping.cloud-foundry-api</artifactId>
-    <version>0.0.1.0010</version>
+    <version>0.0.1.0011</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - Cloud Foundry API</name>
     <description>Cloud Foundry Java client API. This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>

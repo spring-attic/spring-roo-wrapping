@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.springframework.roo</groupId>
 		<artifactId>wrapping</artifactId>
-		<version>1.1.5.RELEASE</version>
+		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
 	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>bcpg-jdk15</pkgArtifactId>
         <pkgVersion>1.45</pkgVersion>
-        <osgiVersion>${pkgVersion}.0.0010</osgiVersion>
+        <osgiVersion>${pkgVersion}.0.0011</osgiVersion>
         <pkgVendor>Legion of the Bouncy Castle</pkgVendor>
         <pkgDocUrl>http://www.bouncycastle.org/java.html</pkgDocUrl>
         <pkgLicense>http://www.bouncycastle.org/licence.html</pkgLicense> <!-- "our license is an adaptation of the MIT X11 License  and should be read as such." -->

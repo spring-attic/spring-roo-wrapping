@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.springframework.roo</groupId>
 		<artifactId>wrapping</artifactId>
-		<version>1.1.5.RELEASE</version>
+		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
 	<artifactId>${project.groupId}.${pkgArtifactId}-jdbc3</artifactId>
@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>postgresql</pkgArtifactId>
         <pkgVersion>9.1-901</pkgVersion>
-        <osgiVersion>${pkgVersion}.0001</osgiVersion>
+        <osgiVersion>${pkgVersion}.0003</osgiVersion>
         <pkgVendor>The PostgreSQL Global Development Group</pkgVendor>
         <pkgDocUrl>http://jdbc.postgresql.org/</pkgDocUrl>
         <pkgLicense>http://jdbc.postgresql.org/license.html</pkgLicense> <!-- It's the BSD license -->
