@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>bin</id>
+  <formats>
+    <format>dir</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <moduleSets>
+    <moduleSet>
+    
+      <!-- Enable access to all projects in the current multimodule build! -->
+      <useAllReactorProjects>true</useAllReactorProjects>
+      
+      <!-- Now, select which projects to include in this module-set. -->
+     <includes>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.antlr4-runtime</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.aopalliance</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.bcpg-jdk15</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.bcprov-jdk15</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.cloud-foundry-api</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.connector</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.derby</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.derbyclient</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.firebird</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.h2</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.hsqldb</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.inflector</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.jgit</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.jline</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.jsch</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.json-simple</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.jtds</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.jtopen</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.mysql-connector-java</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.postgresql-jdbc3</include>
+     	<include>org.springframework.roo.wrapping:org.springframework.roo.wrapping.protobuf-java</include>
+     </includes>
+
+      <!-- Customizing Dependency Output Location 
+           http://books.sonatype.com/mvnref-book/reference/assemblies-sect-controlling-contents.html
+      -->
+
+      <binaries>
+        <outputDirectory>org/springframework/roo/wrapping/${module.artifactId}/${module.version}</outputDirectory>
+        <includeDependencies>false</includeDependencies>
+        <unpack>false</unpack>
+      </binaries>
+    </moduleSet>
+  </moduleSets>
+</assembly>

@@ -20,6 +20,7 @@
         <pkgVendor>The Hapax2 Project</pkgVendor>
         <pkgDocUrl>http://code.google.com/p/hapax2/</pkgDocUrl>
         <pkgLicense>http://www.opensource.org/licenses/mit-license.php</pkgLicense>
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>

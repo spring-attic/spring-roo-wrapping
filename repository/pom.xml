@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <licenses>
+        <license>
+            <name>&gt;GNU General Public License (GPL), Version 3.0</name>
+            <url>http://www.gnu.org/copyleft/gpl.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <modelVersion>4.0.0</modelVersion>
+	  <parent>
+		 <groupId>org.springframework.roo</groupId>
+		 <artifactId>wrapping</artifactId>
+		 <version>2.0.0.RELEASE</version>
+	  </parent>
+    <artifactId>org.springframework.roo.wrapping.repository</artifactId>
+    <packaging>pom</packaging>
+    <name>Spring Roo - Wrapping - OSGi Repository</name>
+    <description>
+    Generates the Wrapping Repository.
+    This module will copy all addon artifacts to the local repository at
+    ${project.parent.basedir}/target/osgi-repository-bin
+    Finally this module will deploy the OSGi repository to production 
+    server.
+    </description>
+
+	<!-- Subsystem Dependencies -->
+
+	<dependencies>
+		<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.antlr4-runtime</artifactId>
+	      <version>4.3.0003</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.aopalliance</artifactId>
+	      <version>1.0.0.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.bcpg-jdk15</artifactId>
+	      <version>1.45.0.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.bcprov-jdk15</artifactId>
+	      <version>1.45.0.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.cloud-foundry-api</artifactId>
+	      <version>0.0.1.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.connector</artifactId>
+	      <version>1.0.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.derby</artifactId>
+	      <version>10.8.2.2.0002</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.derbyclient</artifactId>
+	      <version>10.8.2.2.0002</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.firebird</artifactId>
+	      <version>2.1.6.0021</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.h2</artifactId>
+	      <version>1.3.164.0002</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.hsqldb</artifactId>
+	      <version>1.8.0.10.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.inflector</artifactId>
+	      <version>0.7.0.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.jgit</artifactId>
+	      <version>0.12.1.0011</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.jline</artifactId>
+	      <version>2.12.1.0012</version>
+	   	</dependency>
+	   	<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.jsch</artifactId>
+	      <version>0.1.42.0011</version>
+	   	</dependency>
+   		<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.json-simple</artifactId>
+	      <version>1.1.0.0011</version>
+	   	</dependency>
+   		<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.jtds</artifactId>
+	      <version>1.2.4.0011</version>
+	   	</dependency>
+   		<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.jtopen</artifactId>
+	      <version>6.7.0.0011</version>
+	   	</dependency>
+   		<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.mysql-connector-java</artifactId>
+	      <version>5.1.18.0002</version>
+	   	</dependency>
+		<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.postgresql-jdbc3</artifactId>
+	      <version>9.1-901.0003</version>
+	   	</dependency>
+   		<dependency>
+	      <groupId>org.springframework.roo.wrapping</groupId>
+	      <artifactId>org.springframework.roo.wrapping.protobuf-java</artifactId>
+	      <version>2.4.1.0011</version>
+	   	</dependency>
+  </dependencies>
+
+	<build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh</artifactId>
+        <version>2.8</version>
+      </extension>
+    </extensions>
+    
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>distro-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <finalName>osgi-repository</finalName>
+              <!--
+              Generate OSGi repository in parent's target directory because 
+              each module adds its own repository entry to index.xml before
+              assembly execution, so if we would use own target dir the 
+              execution of clean would remove the target dir including the
+              index.xml that previous modules generated.
+              -->
+              <outputDirectory>../target</outputDirectory>
+              <descriptors>
+                <descriptor>${project.parent.basedir}/src/main/assembly/repo-assembly.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <!--
+        Update the repository index to set the repository name and the XSL 
+        that lets the web browsers to render a user-friendly index.
+        Finally copy the HTML resources to apply the Roo Addon Suite look to the
+        user-friendly index.
+        -->
+        <artifactId>maven-antrun-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>com.oopsconsultancy</groupId>
+            <artifactId>xmltask</artifactId>
+            <version>1.14</version>
+          </dependency>
+          <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>xalan</artifactId>
+            <version>2.7.2</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>userfriendly-index</id>
+            <phase>package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks> 
+              <taskdef classname="com.oopsconsultancy.xmltask.ant.XmlTask" classpathref="maven.plugin.classpath" name="xmltask"/>
+              <xmltask dest="${project.parent.build.directory}/osgi-repository-bin/index.xml" preserveType="false" source="${project.parent.build.directory}/osgi-repository-bin/index.xml">
+                <insert path="/repository" position="before"> 
+                <![CDATA[ 
+                <?xml-stylesheet type="text/xsl" href="obr2html.xsl"?>
+                ]]> 
+                </insert> 
+                <attr attr="name" path="repository" value="Roo Wrapping Repository"/>
+              </xmltask>
+              <copy file="${basedir}/src/main/resources/repository.css" todir="${project.parent.build.directory}/osgi-repository-bin"/>
+              <copy file="${basedir}/src/main/resources/obr2html.xsl" todir="${project.parent.build.directory}/osgi-repository-bin"/>
+              <copy file="${basedir}/src/main/resources/style.css" todir="${project.parent.build.directory}/osgi-repository-bin"/>
+              <copy file="${basedir}/src/main/resources/bootstrap.min.css" todir="${project.parent.build.directory}/osgi-repository-bin"/>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Remember to configure settings.xml maven file
+      with your user and password for serverID osgi-suite-repository -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>wagon-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>upload-repository</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>upload</goal>
+            </goals>
+            <configuration>
+              <serverId>osgi-suite-repository</serverId>
+              <url>${public.repository.url}</url>
+              <fromDir>../target/osgi-repository-bin</fromDir>
+              <toDir>${osgi.repository.dir}</toDir>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+    </plugins>
+  </build>
+	  
+  <profiles>
+  	<!-- -SNAPSHOT Profile -->
+  	<profile>
+  		<id>snapshots</id>
+  		<activation>
+  			<activeByDefault>true</activeByDefault>
+  		</activation>
+  		<properties>
+  			<osgi.repository.dir>/home/snapshot-suite</osgi.repository.dir>
+  		</properties>
+  	</profile>
+  	<!-- -RELEASE Profile -->
+  	<profile>
+  		<id>release</id>
+  		<properties>
+  			<osgi.repository.dir>your/osgiserver/location/path</osgi.repository.dir>
+  		</properties>
+  	</profile>
+  </profiles>
+  
+</project>

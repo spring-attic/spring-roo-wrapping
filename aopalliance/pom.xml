@@ -20,6 +20,7 @@
         <pkgVendor>AOP Alliance</pkgVendor>
         <pkgDocUrl>http://aopalliance.sourceforge.net/</pkgDocUrl>
         <pkgLicense>http://aopalliance.sourceforge.net/</pkgLicense>  <!-- quote from that page as of 09 Apr 2011: "LICENCE: all the source code provided by AOP Alliance is Public Domain." -->
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>

@@ -20,6 +20,7 @@
         <pkgVendor>H2 Database Engine</pkgVendor>
         <pkgDocUrl>http://www.h2database.com</pkgDocUrl>
         <pkgLicense>http://www.h2database.com/html/license.html</pkgLicense> 
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>

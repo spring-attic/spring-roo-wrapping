@@ -20,6 +20,7 @@
         <pkgVendor>Apache Derby</pkgVendor>
         <pkgDocUrl>http://db.apache.org/derby/</pkgDocUrl>
         <pkgLicense>http://db.apache.org/derby/license.html</pkgLicense> 
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>

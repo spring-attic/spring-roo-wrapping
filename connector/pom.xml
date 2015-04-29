@@ -17,6 +17,7 @@
         <pkgArtifactId>connector</pkgArtifactId>
         <pkgVersion>1.0</pkgVersion>
         <osgiVersion>${pkgVersion}.0011</osgiVersion>
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <repositories>

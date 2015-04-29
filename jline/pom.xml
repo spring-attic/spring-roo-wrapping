@@ -20,6 +20,7 @@
         <pkgVendor>JLine Project</pkgVendor>
         <pkgDocUrl>http://jline.sourceforge.net/</pkgDocUrl>
         <pkgLicense>http://www.opensource.org/licenses/bsd-license.php</pkgLicense>
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>

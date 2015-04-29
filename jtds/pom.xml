@@ -20,6 +20,7 @@
         <pkgVendor>The jTDS Project</pkgVendor>
         <pkgDocUrl>http://jtds.sourceforge.net/</pkgDocUrl>
         <pkgLicense>http://jtds.sourceforge.net/license.html</pkgLicense> <!-- LGPL -->
+        <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>

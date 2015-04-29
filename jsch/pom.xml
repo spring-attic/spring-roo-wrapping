@@ -20,6 +20,7 @@
         <pkgVendor>The JSch Project</pkgVendor>
         <pkgDocUrl>http://www.jcraft.com/jsch/</pkgDocUrl>
         <pkgLicense>http://www.jcraft.com/jsch/LICENSE.txt</pkgLicense> 
+        <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>

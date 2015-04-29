@@ -17,6 +17,7 @@
         <pkgArtifactId>AppCloudClient</pkgArtifactId>
         <pkgVersion>0.0.1.A1-ROO</pkgVersion>
         <pkgVendor>VMware, Inc</pkgVendor>
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
     
     <repositories>

@@ -20,7 +20,8 @@
         <pkgVendor>Inflector Project</pkgVendor>
         <pkgDocUrl>https://inflector.dev.java.net/</pkgDocUrl>
         <pkgLicense>http://www.apache.org/licenses/LICENSE-2.0</pkgLicense>
-    </properties>
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
+   	</properties>
 
     <dependencies>
         <dependency>

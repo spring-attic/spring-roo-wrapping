@@ -20,6 +20,7 @@
         <pkgVendor>The HSQL Development Group</pkgVendor>
         <pkgDocUrl>http://hsqldb.org/</pkgDocUrl>
         <pkgLicense>http://hsqldb.org/web/hsqlLicense.html</pkgLicense> <!-- Based on BSD license -->
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
     <dependencies>
