@@ -91,7 +91,7 @@
 			    		Spring Roo Wrapping Repository
 			    	</h2>
 			    	<h3 class="blog-description light">
-			    		Spring Roo Wrapping Repository.
+			    		This Spring Roo OSGi repository contains several standard JARs converted into OSGi bundles for Spring Roo usage.
 			    	</h3>
 			    </div>
 			</div>	    

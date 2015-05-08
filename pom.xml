@@ -9,6 +9,19 @@
     <description>Automates the conversion of standard JARs into OSGi bundles for Spring Roo usage. This module acts as a parent POM, but does not perform a reactor build
     because each project should be wrapped and deployment on an as-required basis.</description>
     <inceptionYear>2009</inceptionYear>
+    
+    <distributionManagement>
+	    <repository>
+	        <id>wrapping-repo</id>
+	        <name>repo.spring.io-releases</name>
+	        <url>http://repo.spring.io/spring-roo</url>
+	    </repository>
+	    <snapshotRepository>
+	        <id>wrapping-repo</id>
+	        <name>repo.spring.io-snapshots</name>
+	        <url>http://repo.spring.io/spring-roo</url>
+	    </snapshotRepository>
+	</distributionManagement>
 
     <modules>
       <module>antlr4-runtime</module>
@@ -38,6 +51,7 @@
       <!-- Generates wrapping repository -->
       <module>repository</module>
     </modules>
+    
     <repositories>
         <repository>
             <id>maven.springframework.org.external</id>
@@ -60,13 +74,6 @@
     </pluginRepositories>
 
     <build>
-        <extensions>
-            <extension>
-                <groupId>org.springframework.build.aws</groupId>
-                <artifactId>org.springframework.build.aws.maven</artifactId>
-                <version>3.1.0.RELEASE</version>
-            </extension>
-        </extensions>
         <plugins>
             <plugin>
 	        <!--
