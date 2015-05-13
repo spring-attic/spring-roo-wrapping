@@ -10,21 +10,32 @@
     because each project should be wrapped and deployment on an as-required basis.</description>
     <inceptionYear>2009</inceptionYear>
     
+    <properties>
+    	<!-- Repository where wrapping will be deployed -->
+    	<deploy.repository.url>http://repo.spring.io/spring-roo</deploy.repository.url>
+    </properties>
+    
     <distributionManagement>
 	    <repository>
 	        <id>wrapping-repo</id>
 	        <name>repo.spring.io-releases</name>
-	        <url>http://repo.spring.io/spring-roo</url>
+	        <url>${deploy.repository.url}</url>
 	    </repository>
 	    <snapshotRepository>
 	        <id>wrapping-repo</id>
 	        <name>repo.spring.io-snapshots</name>
-	        <url>http://repo.spring.io/spring-roo</url>
+	        <url>${deploy.repository.url}</url>
 	    </snapshotRepository>
 	</distributionManagement>
 
     <modules>
-      <module>antlr4-runtime</module>
+      <module>postgresql</module>
+      <!-- Generates wrapping repository -->
+      <module>repository</module>
+      
+      <!-- The following modules are not necessary on Spring Roo project anymore -->
+      
+      <!-- <module>antlr4-runtime</module>
       <module>aopalliance</module>
       <module>bcpg-jdk15</module>
       <module>bcprov-jdk15</module>
@@ -46,10 +57,8 @@
       <module>jtds</module>
       <module>jtopen</module>
       <module>mysql</module>
-      <module>postgresql</module>
-      <module>protobuf-full</module>
-      <!-- Generates wrapping repository -->
-      <module>repository</module>
+      <module>protobuf-full</module>-->
+      
     </modules>
     
     <repositories>
@@ -84,7 +93,7 @@
 	        -->
 	        <groupId>org.apache.felix</groupId>
 	        <artifactId>maven-bundle-plugin</artifactId>
-	        <version>2.5.3</version>
+	        <version>2.3.5</version>
 	        <extensions>true</extensions>
 	        <executions>
 	        	<execution>
@@ -108,7 +117,7 @@
 		          <supportedProjectTypes>jar</supportedProjectTypes>
 		          <supportedProjectTypes>esa</supportedProjectTypes>
 		        </supportedProjectTypes>
-	          <prefixUrl/>
+	          <prefixUrl>${deploy.repository.url}</prefixUrl>
 	          <remoteOBR>index.xml</remoteOBR>
 	          <obrDeploymentRepository>local::default::file://${target.osgi-repository.directory}</obrDeploymentRepository>
 	          <instructions>
