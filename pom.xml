@@ -29,9 +29,16 @@
 	</distributionManagement>
 
     <modules>
+      <module>jtopen</module>
       <module>postgresql</module>
+      <module>jtds</module>
+      <module>derby-client</module>
+      <module>derby</module>
+      <module>firebird</module>
+      <module>mysql</module>
       <!-- Generates wrapping repository -->
       <module>repository</module>
+      
       
       <!-- The following modules are not necessary on Spring Roo project anymore -->
       
@@ -42,9 +49,6 @@
       <module>cloud-foundry-api</module>
       <module>commons-logging</module>
       <module>connector</module>
-      <module>derby</module>
-      <module>derby-client</module>
-      <module>firebird</module>
       <module>h2</module>
       <module>hsqldb</module>
       <module>inflector</module>
@@ -54,9 +58,6 @@
       <module>jline</module>
       <module>jsch</module>
       <module>json-simple</module>
-      <module>jtds</module>
-      <module>jtopen</module>
-      <module>mysql</module>
       <module>protobuf-full</module>-->
       
     </modules>

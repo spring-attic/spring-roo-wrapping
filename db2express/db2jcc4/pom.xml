@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.roo.wrapping</groupId>
+    <artifactId>org.springframework.roo.wrapping.db2jcc4.root</artifactId>
+    <version>2.0.0.RELEASE</version>
+  </parent>
+
+  <artifactId>org.springframework.roo.wrapping.db2jcc4</artifactId>
+  <version>9.7.2</version>
+  <packaging>bundle</packaging>
+  <name>Spring Roo - Wrapping - Db2Express JDBC driver</name>
+  <description>Db2Express JDBC driver classes. This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
+
+
+   <properties>
+   		<pkgGroupId>com.ibm</pkgGroupId>
+        <pkgArtifactId>db2jcc4</pkgArtifactId>
+        <pkgVersion>9.7.2</pkgVersion>
+        <osgiVersion>${pkgVersion}.0011</osgiVersion>
+        <pkgVendor>IBM</pkgVendor>
+        <pkgDocUrl>http://www-01.ibm.com/software/data/db2/express/</pkgDocUrl>
+        <pkgLicense>http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&amp;li_formnum=L-CLAW-7QANPG&amp;title=DB2+Express-C+database+server&amp;l=en</pkgLicense>
+    	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
+    </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${pkgGroupId}</groupId>
+      <artifactId>${pkgArtifactId}</artifactId>
+      <version>${pkgVersion}</version>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+
+</project>

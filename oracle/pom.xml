@@ -7,13 +7,14 @@
 	<version>2.0.0.RELEASE</version>
   </parent>
   <groupId>org.springframework.roo.wrapping</groupId>
-  <artifactId>org.springframework.roo.wrapping.db2jcc4.root</artifactId>
+  <artifactId>org.springframework.roo.wrapping.com.oracle.root</artifactId>
   <packaging>pom</packaging>
-  <name>Spring Roo - Wrapping - Db2Express</name>
-  <description>This OSGi bundle wraps Db2Express jar files.</description>
+  <name>Spring Roo - Wrapping - Oracle</name>
+  <description>This OSGi bundle wraps ${pkgArtifactId} ${pkgVersion} jar files.</description>
 
   <modules>
-    <module>db2jcc4</module>
+    <module>ojdbc14</module>
+    <module>ojdbc6</module>
   </modules>
 
   <build>

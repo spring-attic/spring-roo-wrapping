@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.roo.wrapping</groupId>
+    <artifactId>org.springframework.roo.wrapping.com.oracle.root</artifactId>
+    <version>2.0.0.RELEASE</version>
+  </parent>
+
+  <artifactId>org.springframework.roo.wrapping.com.oracle.ojdbc14</artifactId>
+  <version>10.2.0.5</version>
+  <packaging>bundle</packaging>
+  <name>Spring Roo - Wrapping - Oracle 10.2 JDBC driver</name>
+  <description>Oracle 10.2 JDBC driver classes for use with JDK1.4 and JDK1.5, driverclass:oracle.jdbc.OracleDriver. This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
+
+
+  <properties>
+    <pkgGroupId>com.oracle</pkgGroupId>
+    <pkgArtifactId>ojdbc14</pkgArtifactId>
+    <pkgVersion>${project.version}</pkgVersion>
+    <pkgVendor>Oracle Corporation</pkgVendor>
+    <pkgDocUrl>http://www.oracle.com/technology/software/tech/java/sqlj_jdbc/index.html</pkgDocUrl>
+    <pkgLicense>http://www.oracle.com/technology/software/htdocs/distlic.html</pkgLicense>
+    <pkgExport>*;version=${pkgVersion}</pkgExport>
+    <pkgImport>*;resolution:=optional</pkgImport>
+    <pkgPrivate>!*</pkgPrivate>
+    <osgiVersion>${pkgVersion}.0001</osgiVersion>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${pkgGroupId}</groupId>
+      <artifactId>${pkgArtifactId}</artifactId>
+      <version>${pkgVersion}</version>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+
+</project>

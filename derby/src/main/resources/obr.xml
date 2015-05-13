@@ -1,0 +1,7 @@
+<repository>
+	<resource>
+		<capability name='jdbcdriver'>
+			<p n="driver" v="org.apache.derby.jdbc.EmbeddedDriver" />
+		</capability>
+	</resource>
+</repository>

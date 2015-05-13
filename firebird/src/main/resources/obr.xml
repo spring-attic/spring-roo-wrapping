@@ -1,0 +1,7 @@
+<repository>
+	<resource>
+		<capability name='jdbcdriver'>
+			<p n="driver" v="org.firebirdsql.jdbc.FBDriver" />
+		</capability>
+	</resource>
+</repository>

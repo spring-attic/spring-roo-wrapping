@@ -1,0 +1,7 @@
+<repository>
+	<resource>
+		<capability name='jdbcdriver'>
+			<p n="driver" v="net.sourceforge.jtds.jdbc.Driver" />
+		</capability>
+	</resource>
+</repository>

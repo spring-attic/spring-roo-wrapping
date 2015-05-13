@@ -1,0 +1,7 @@
+<repository>
+	<resource>
+		<capability name='jdbcdriver'>
+			<p n="driver" v="com.ibm.as400.access.AS400JDBCDriver" />
+		</capability>
+	</resource>
+</repository>
