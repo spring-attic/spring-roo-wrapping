@@ -36,6 +36,7 @@
       <module>derby</module>
       <module>firebird</module>
       <module>mysql</module>
+      <module>snakeyaml</module>
       <!-- Generates wrapping repository -->
       <module>repository</module>
       
