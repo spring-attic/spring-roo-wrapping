@@ -28,6 +28,7 @@
 		    <groupId>javax.el</groupId>
 		    <artifactId>javax.el-api</artifactId>
 		    <version>${pkgVersion}</version>
+            <optional>true</optional>
 		</dependency>
 	</dependencies>
 
