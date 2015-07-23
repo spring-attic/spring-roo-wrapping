@@ -1,7 +1,0 @@
-<repository>
-	<resource>
-		<capability name='jdbcdriver'>
-			<p n="driver" v="org.postgresql.Driver" />
-		</capability>
-	</resource>
-</repository>
