@@ -37,6 +37,11 @@
       <module>firebird</module>
       <module>mysql</module>
       <module>snakeyaml</module>
+      <module>bcprov-jdk15</module>
+      <module>bcpg-jdk15</module>
+      <module>json-simple</module>
+      <module>inflector</module>
+      <module>antlr4-runtime</module>
       <!-- Generates wrapping repository -->
       <module>repository</module>
       

@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>json-simple</pkgArtifactId>
         <pkgVersion>1.1</pkgVersion>
-        <osgiVersion>${pkgVersion}.0.0011</osgiVersion>
+        <osgiVersion>${pkgVersion}.0.0010</osgiVersion>
         <pkgVendor>JSON-Simple Project</pkgVendor>
         <pkgDocUrl>http://code.google.com/p/json-simple/</pkgDocUrl>
         <pkgLicense>http://www.apache.org/licenses/LICENSE-2.0.html</pkgLicense>

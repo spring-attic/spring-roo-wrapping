@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>inflector</pkgArtifactId>
         <pkgVersion>0.7.0</pkgVersion>
-        <osgiVersion>${pkgVersion}.0011</osgiVersion>
+        <osgiVersion>${pkgVersion}.0010</osgiVersion>
         <pkgVendor>Inflector Project</pkgVendor>
         <pkgDocUrl>https://inflector.dev.java.net/</pkgDocUrl>
         <pkgLicense>http://www.apache.org/licenses/LICENSE-2.0</pkgLicense>

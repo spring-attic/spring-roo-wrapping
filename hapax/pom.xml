@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>hapax</pkgArtifactId>
         <pkgVersion>2.3.4</pkgVersion>
-        <osgiVersion>${pkgVersion}.0011</osgiVersion>
+        <osgiVersion>${pkgVersion}.0010</osgiVersion>
         <pkgVendor>The Hapax2 Project</pkgVendor>
         <pkgDocUrl>http://code.google.com/p/hapax2/</pkgDocUrl>
         <pkgLicense>http://www.opensource.org/licenses/mit-license.php</pkgLicense>

@@ -16,7 +16,7 @@
     <properties>
         <pkgArtifactId>antlr4-runtime</pkgArtifactId>
         <pkgVersion>4.3</pkgVersion>
-        <osgiVersion>${pkgVersion}.0003</osgiVersion>
+        <osgiVersion>${pkgVersion}.0002</osgiVersion>
         <pkgVendor>ANTLR 4 Runtime</pkgVendor>
         <pkgDocUrl>http://www.antlr.org/wiki/display/ANTLR4/Home</pkgDocUrl>
         <pkgLicense>https://raw.github.com/antlr/antlr4/master/LICENSE.txt</pkgLicense>
