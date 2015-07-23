@@ -11,7 +11,8 @@
     <version>${osgiVersion}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}-snake-yaml</name>
-    <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}-snake-yaml.</description>
+    <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}-snake-yaml.
+    SnakeYAML bundle includes a requirement for executing in Java 5, this wrapping removes that requirement.</description>
 
     <properties>
         <pkgArtifactId>snakeyaml</pkgArtifactId>
