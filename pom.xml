@@ -10,21 +10,16 @@
     because each project should be wrapped and deployment on an as-required basis.</description>
     <inceptionYear>2009</inceptionYear>
     
-    <properties>
-    	<!-- Repository where wrapping will be deployed -->
-    	<deploy.repository.url>http://repo.spring.io/spring-roo</deploy.repository.url>
-    </properties>
-    
     <distributionManagement>
 	    <repository>
-	        <id>wrapping-repo</id>
+	        <id>spring-repo</id>
 	        <name>repo.spring.io-releases</name>
-	        <url>${deploy.repository.url}</url>
+    	    <url>http://repo.spring.io/spring-roo</url>
 	    </repository>
 	    <snapshotRepository>
-	        <id>wrapping-repo</id>
+	        <id>spring-repo</id>
 	        <name>repo.spring.io-snapshots</name>
-	        <url>${deploy.repository.url}</url>
+    	    <url>http://repo.spring.io/spring-roo/snapshots</url>
 	    </snapshotRepository>
 	</distributionManagement>
 
