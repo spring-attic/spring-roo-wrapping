@@ -7,16 +7,16 @@
 		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
-	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
-    <version>${osgiVersion}</version>
+    <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
+    <version>${pkgVersion}.${wrapper.version}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
 
     <properties>
+        <wrapper.version>002</wrapper.version>
         <pkgArtifactId>derby</pkgArtifactId>
         <pkgVersion>10.8.2.2</pkgVersion>
-        <osgiVersion>${pkgVersion}.0002</osgiVersion>
         <pkgVendor>Apache Derby</pkgVendor>
         <pkgDocUrl>http://db.apache.org/derby/</pkgDocUrl>
         <pkgLicense>http://db.apache.org/derby/license.html</pkgLicense> 

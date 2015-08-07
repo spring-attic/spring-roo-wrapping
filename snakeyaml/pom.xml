@@ -7,17 +7,17 @@
 		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
-	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
-    <version>${osgiVersion}</version>
+    <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
+    <version>${pkgVersion}.${wrapper.version}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}-snake-yaml.
     SnakeYAML bundle includes a requirement for executing in Java 5, this wrapping removes that requirement.</description>
 
     <properties>
+        <wrapper.version>001</wrapper.version>
         <pkgArtifactId>snakeyaml</pkgArtifactId>
         <pkgVersion>1.15</pkgVersion>
-        <osgiVersion>${pkgVersion}.0001</osgiVersion>
         <pkgVendor>Snake YAML</pkgVendor>
         <pkgDocUrl>https://bitbucket.org/asomov/snakeyaml/wiki/Documentation</pkgDocUrl>
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>

@@ -7,16 +7,16 @@
 		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
-	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
-    <version>${osgiVersion}</version>
+    <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
+    <version>${pkgVersion}.${wrapper.version}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
 
     <properties>
+        <wrapper.version>002</wrapper.version>
         <pkgArtifactId>mysql-connector-java</pkgArtifactId>
         <pkgVersion>5.1.18</pkgVersion>
-        <osgiVersion>${pkgVersion}.0002</osgiVersion>
         <pkgVendor>MySQL</pkgVendor>
         <pkgDocUrl>http://www.mysql.com/</pkgDocUrl>
         <pkgLicense>http://www.mysql.com/about/legal/licensing/oem/</pkgLicense> <!-- Based on GPL license -->

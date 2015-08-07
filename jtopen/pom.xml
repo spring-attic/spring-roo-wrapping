@@ -7,16 +7,16 @@
 		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
-	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
-    <version>${osgiVersion}</version>
+    <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
+    <version>${pkgVersion}.${wrapper.version}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
  
     <properties>
+        <wrapper.version>011</wrapper.version>
         <pkgArtifactId>jtopen</pkgArtifactId>
         <pkgVersion>6.7</pkgVersion>
-        <osgiVersion>${pkgVersion}.0.0011</osgiVersion>
         <pkgVendor>The JTOpen Project</pkgVendor>
         <pkgDocUrl>http://jt400.sourceforge.net/</pkgDocUrl>
         <pkgLicense>http://www.opensource.org/licenses/ibmpl.php</pkgLicense> 

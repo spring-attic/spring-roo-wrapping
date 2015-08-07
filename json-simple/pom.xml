@@ -7,16 +7,16 @@
 		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
-	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
-    <version>${osgiVersion}</version>
+    <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
+    <version>${pkgVersion}.${wrapper.version}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
 
     <properties>
+        <wrapper.version>010</wrapper.version>
         <pkgArtifactId>json-simple</pkgArtifactId>
         <pkgVersion>1.1</pkgVersion>
-        <osgiVersion>${pkgVersion}.0.0010</osgiVersion>
         <pkgVendor>JSON-Simple Project</pkgVendor>
         <pkgDocUrl>http://code.google.com/p/json-simple/</pkgDocUrl>
         <pkgLicense>http://www.apache.org/licenses/LICENSE-2.0.html</pkgLicense>

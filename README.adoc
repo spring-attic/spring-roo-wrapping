@@ -11,17 +11,20 @@ This Git repository contains various script files that enable easy
 production of OSGi-compliant bundles using a technique known as
 "wrapping". These are generally used by Spring Roo and its add-ons.
 
-You can read more about Spring Roo at the following location:
+The goals of the JAR wrappers are:
 
-   http://projects.spring.io/spring-roo/
+* Turn a non-OSGi JAR into an OSGi-enabled JAR.
+* Patch libraries by replacing or adding artifacts inside the JAR.
+
+The output JAR is then usable in Roo or other OSGi containers
 
 == Prerequisites
 
 In order to complete these instructions, you must have rights to
-deploy files to http://spring-roo-repository.springsource.org/release.
+deploy files to http://repo.spring.io/spring-roo/.
 All wrapped JARs are deployed under the following directory:
 
-   /release/org/springframework/roo/wrapping
+   /org/springframework/roo/wrapping
 
 To perform wrapping you need:
 
@@ -31,15 +34,28 @@ To perform wrapping you need:
 * Upload privileges to the above location
 * GPG setup (see main Spring Roo readme.txt for instructions)
  
-If you want to host an OSGi-compliant jar that
- does not need wrapping at http://spring-roo-repository.springsource.org/release,
- be sure to create an asc file of the jar and pom.xml using 
- gpg --ab <filename> and upload the asc files as well.
+If you want to host an OSGi-compliant JAR that
+does not need wrapping at http://repo.spring.io/spring-roo/,
+be sure to create an .ASC file of the JAR and _pom.xml_ using 
+`gpg --ab <filename>` and upload the ASC files as well.
 
 == GIT Policies
 
 The same Git policies apply to this repository as the normal Roo
 repository.
+
+== Naming conventions
+
+By being `pkgArtifactId` and `pkgVersion` the `artifactId` and the `version` of
+the "input" non-OSGi JAR, the wrappings must follow the naming conventions
+below:
+
+* The `groupId` must be _org.springframework.roo.wrapping_
+* The `artifactId` must be `groupId`.`pkgArtifactId`
+* The `version` must be `pkgVersion`.`wrapper.version`
+
+NOTE: `wrapper.version` is a three-digit string that identifies the version of
+each wrapper in order to know the latest release of that wrapper.
 
 == Releasing
 
@@ -55,11 +71,9 @@ wrapping JAR and then use:
 
    mvn clean deploy
 
-IMPORTANT: Ensure you increment the final three-digit prefix for the
-version number displayed in the pom.xml. Also ensure you edit the
-main Roo pom.xml <dependencyManagement> section to refer to the new
-version once you have completed the deployment. This ensures everyone
-is on the latest release you have made.
+IMPORTANT: Before releasing, ensure you increment the final three-digit 
+suffix for the version number displayed in the _pom.xml_. This ensures 
+everyone is on the latest release you have made.
 
 == Help
 

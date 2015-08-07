@@ -8,15 +8,15 @@
     </parent>
     <groupId>org.springframework.roo.wrapping</groupId>
     <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
-    <version>${osgiVersion}</version>
+    <version>${pkgVersion}.${wrapper.version}</version>
     <packaging>bundle</packaging>
     <name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
 
     <properties>
+        <wrapper.version>002</wrapper.version>
         <pkgArtifactId>antlr4-runtime</pkgArtifactId>
         <pkgVersion>4.3</pkgVersion>
-        <osgiVersion>${pkgVersion}.0002</osgiVersion>
         <pkgVendor>ANTLR 4 Runtime</pkgVendor>
         <pkgDocUrl>http://www.antlr.org/wiki/display/ANTLR4/Home</pkgDocUrl>
         <pkgLicense>https://raw.github.com/antlr/antlr4/master/LICENSE.txt</pkgLicense>

@@ -7,16 +7,16 @@
 		<version>2.0.0.RELEASE</version>
 	</parent>
     <groupId>org.springframework.roo.wrapping</groupId>
-	<artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
-    <version>${osgiVersion}</version>
+    <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
+    <version>${pkgVersion}.${wrapper.version}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
     <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.</description>
 
     <properties>
+        <wrapper.version>021</wrapper.version>
         <pkgArtifactId>firebird</pkgArtifactId>
         <pkgVersion>2.1.6</pkgVersion>
-        <osgiVersion>${pkgVersion}.0021</osgiVersion>
         <pkgVendor>The Firebird Project</pkgVendor>
         <pkgDocUrl>http://www.firebirdsql.org/</pkgDocUrl>
         <pkgLicense><![CDATA[http://www.firebirdsql.org/index.php?op=doc&amp;id=idpl]]></pkgLicense> 
