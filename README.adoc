@@ -22,6 +22,7 @@ The output JAR is then usable in Roo or other OSGi containers
 
 In order to complete these instructions, you must have rights to
 deploy files to http://repo.spring.io/spring-roo/.
+
 All wrapped JARs are deployed under the following directory:
 
    /org/springframework/roo/wrapping
@@ -59,17 +60,16 @@ each wrapper in order to know the latest release of that wrapper.
 
 == Releasing
 
-The wrapping repository is separated from the normal Roo repository so
-that each project in the wrapping repository can be released as part
-of its own release cycle. The wrapping projects are NOT released
+The wrapping repository is separated from the normal Roo repository at
+Maven Central so that each project in the wrapping repository can be released 
+as part of its own release cycle. The wrapping projects are NOT released
 during the normal Roo release cycle and the Roo CI server does NOT
 perform any wrapping module releases.
 
 As such, it is expected that developers wishing to make wrapped JAR
 available will manually produce/edit the relevant subdirectory of the
-wrapping JAR and then use:
-
-   mvn clean deploy
+wrapping JAR and then connect to https://repo.spring.io/ to deploy the JAR
+manually.
 
 IMPORTANT: Before releasing, ensure you increment the final three-digit 
 suffix for the version number displayed in the _pom.xml_. This ensures 
