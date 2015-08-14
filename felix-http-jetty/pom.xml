@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.springframework.roo.wrapping</groupId>
+    <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
+    <version>${pkgVersion}.${wrapper.version}</version>
+    <packaging>jar</packaging>
+	  <name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
+    <description>This bundle wraps the standard Maven artifact ${pkgArtifactId}-${pkgVersion} and patch some classes to avoid to write log messages to System.out.</description>
+
+    <properties>
+        <wrapper.version>001</wrapper.version>
+        <pkgArtifactId>org.apache.felix.http.jetty</pkgArtifactId>
+        <pkgVersion>2.3.2</pkgVersion>
+        <pkgVendor>The Apache Software Foundation</pkgVendor>
+        <pkgDocUrl>http://felix.apache.org/documentation.html</pkgDocUrl>
+        <pkgLicense>http://felix.apache.org/license.html</pkgLicense>
+        <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>${pkgArtifactId}</artifactId>
+            <version>${pkgVersion}</version>
+            <optional>true</optional>
+            <exclusions>
+                <exclusion>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.framework</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.framework</artifactId>
+            <version>4.6.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.log</artifactId>
+            <version>1.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.10</version>
+                <executions>
+                    <execution>
+                        <id>unpack</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                        <!-- 
+                        Notes about includeScope: 
+                        - Empty string indicates all scopes (default)
+                        - runtime scope gives runtime and compile dependencies
+                        -->
+                            <includeScope>runtime</includeScope>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.felix</groupId>
+                                    <artifactId>${pkgArtifactId}</artifactId>
+                                    <version>${pkgVersion}</version>
+                                    <type>jar</type>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                    <!--
+                                    Exclude replaced artifacts
+                                    <excludes>**/ConsoleLogger.class</excludes>
+                                    -->
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-jar-plugin</artifactId>
+              <version>2.6</version>
+              <configuration>
+                <archive>
+                  <addMavenDescriptor>false</addMavenDescriptor>
+                  <index>false</index>
+                   <manifestFile>${project.build.directory}/classes/META-INF/MANIFEST.MF</manifestFile>
+                </archive>
+              </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
