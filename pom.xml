@@ -37,6 +37,7 @@
       <module>json-simple</module>
       <module>inflector</module>
       <module>antlr4-runtime</module>
+      <module>felix-http-jetty</module>
       <!-- Generates wrapping repository -->
       <module>repository</module>
       
