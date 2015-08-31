@@ -18,11 +18,16 @@
  */
 package org.apache.felix.http.base.internal.logger;
 
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+/**
+ * Logger based on Java Logging API.
+ *
+ */
 public final class JDK14Logger
     extends AbstractLogger
 {
@@ -30,32 +35,40 @@ public final class JDK14Logger
     private final Level defaultLevel = Level.OFF;
     private BundleContext context;
 
-    public JDK14Logger(BundleContext context) {
+    public JDK14Logger(BundleContext context)
+    {
         this.context = context;
     }
 
-    public void log(ServiceReference ref, int level, String message, Throwable cause) {
+    @Override
+    public void log(ServiceReference ref, int level, String message, Throwable cause)
+    {
         Object service = null;
         Class clazz = null;
         Logger logger = null;
 
-        if(ref != null) {
+        if(ref != null)
+        {
             service = context.getService(ref);
         }
 
-        if(service != null) {
+        if(service != null)
+        {
             clazz = service.getClass();
         }
 
-        if(clazz != null) {
+        if(clazz != null)
+        {
             logger = Logger.getLogger(clazz.getName());
         }
-        else {
+        else
+        {
             logger = defaultLogger;
         }
 
         Level logLevel = defaultLevel;
-        switch (level) {
+        switch (level)
+        {
             case LOG_DEBUG:
                 logLevel = Level.FINE;
                 break;
@@ -70,10 +83,12 @@ public final class JDK14Logger
                 break;
         }
 
-        if (cause != null) {
+        if (cause != null)
+        {
             logger.log(logLevel, message, cause);
         }
-        else {
+        else
+        {
             logger.log(logLevel, message);
         }
     }

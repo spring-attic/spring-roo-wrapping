@@ -9,7 +9,7 @@
     <description>This bundle wraps the standard Maven artifact ${pkgArtifactId}-${pkgVersion} and patch some classes to avoid to write log messages to System.out.</description>
 
     <properties>
-        <wrapper.version>001</wrapper.version>
+        <wrapper.version>002</wrapper.version>
         <pkgArtifactId>org.apache.felix.http.jetty</pkgArtifactId>
         <pkgVersion>2.3.2</pkgVersion>
         <pkgVendor>The Apache Software Foundation</pkgVendor>
