@@ -12,12 +12,12 @@
     
     <distributionManagement>
 	    <repository>
-	        <id>spring-repo</id>
+	        <id>wrapping-repo</id>
 	        <name>repo.spring.io-releases</name>
     	    <url>http://repo.spring.io/spring-roo</url>
 	    </repository>
 	    <snapshotRepository>
-	        <id>spring-repo</id>
+	        <id>wrapping-repo-snapshots</id>
 	        <name>repo.spring.io-snapshots</name>
     	    <url>http://repo.spring.io/spring-roo/snapshots</url>
 	    </snapshotRepository>

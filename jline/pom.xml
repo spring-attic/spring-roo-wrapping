@@ -11,12 +11,23 @@
     <version>${osgiVersion}</version>
 	<packaging>bundle</packaging>
 	<name>Spring Roo - Wrapping - ${pkgArtifactId}</name>
-    <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.S2-A (S2-A is a private patched version; see ROO-350 for details)</description>
+    <description>This bundle wraps the standard Maven artifact: ${pkgArtifactId}-${pkgVersion}.S2-B (S2-B is a private patched version; see ROO-350 for details)</description>
+
+	<repositories>
+		<repository>
+	  	    <id>springsource-repository-release</id>
+		    <name>libs-release</name>
+		    <url>http://repo.springsource.org/libs-release</url>
+		    <snapshots>
+	    	    	<enabled>false</enabled>
+	  	    </snapshots>
+		</repository>
+	</repositories>
 
     <properties>
         <pkgArtifactId>jline</pkgArtifactId>
-        <pkgVersion>2.12.1</pkgVersion>
-        <osgiVersion>${pkgVersion}.0012</osgiVersion>
+        <pkgVersion>1.0.S2-B</pkgVersion>
+        <osgiVersion>${pkgVersion}.0013</osgiVersion>
         <pkgVendor>JLine Project</pkgVendor>
         <pkgDocUrl>http://jline.sourceforge.net/</pkgDocUrl>
         <pkgLicense>http://www.opensource.org/licenses/bsd-license.php</pkgLicense>
@@ -25,7 +36,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>jline</groupId>
+            <groupId>net.sourceforge.jline</groupId>
             <artifactId>${pkgArtifactId}</artifactId>
             <version>${pkgVersion}</version>
             <optional>true</optional>
