@@ -32,6 +32,7 @@
       <module>firebird</module>
       <module>mysql</module>
       <module>snakeyaml</module>
+      <module>jsoup</module>
       <module>bcprov-jdk15</module>
       <module>bcpg-jdk15</module>
       <module>json-simple</module>

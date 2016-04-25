@@ -1,0 +1,12 @@
+felix-framework/target/
+felix-http-jetty/target
+firebird/target
+inflector/target
+json-simple/target
+jsoup/target
+jtds/target
+jtopen/target
+mysql/target
+postgresql/target
+snakeyaml/target
+.project
