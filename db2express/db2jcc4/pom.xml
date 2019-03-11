@@ -20,8 +20,8 @@
         <pkgVersion>9.7.2</pkgVersion>
         <osgiVersion>${pkgVersion}.0011</osgiVersion>
         <pkgVendor>IBM</pkgVendor>
-        <pkgDocUrl>http://www-01.ibm.com/software/data/db2/express/</pkgDocUrl>
-        <pkgLicense>http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&amp;li_formnum=L-CLAW-7QANPG&amp;title=DB2+Express-C+database+server&amp;l=en</pkgLicense>
+        <pkgDocUrl>https://www-01.ibm.com/software/data/db2/express/</pkgDocUrl>
+        <pkgLicense>https://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&amp;li_formnum=L-CLAW-7QANPG&amp;title=DB2+Express-C+database+server&amp;l=en</pkgLicense>
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

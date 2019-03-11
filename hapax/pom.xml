@@ -18,8 +18,8 @@
         <pkgVersion>2.3.4</pkgVersion>
         <osgiVersion>${pkgVersion}.0010</osgiVersion>
         <pkgVendor>The Hapax2 Project</pkgVendor>
-        <pkgDocUrl>http://code.google.com/p/hapax2/</pkgDocUrl>
-        <pkgLicense>http://www.opensource.org/licenses/mit-license.php</pkgLicense>
+        <pkgDocUrl>https://code.google.com/p/hapax2/</pkgDocUrl>
+        <pkgLicense>https://www.opensource.org/licenses/mit-license.php</pkgLicense>
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

@@ -18,8 +18,8 @@
         <pkgArtifactId>postgresql</pkgArtifactId>
         <pkgVersion>9.1-901</pkgVersion>
         <pkgVendor>The PostgreSQL Global Development Group</pkgVendor>
-        <pkgDocUrl>http://jdbc.postgresql.org/</pkgDocUrl>
-        <pkgLicense>http://jdbc.postgresql.org/license.html</pkgLicense> <!-- It's the BSD license -->
+        <pkgDocUrl>https://jdbc.postgresql.org/</pkgDocUrl>
+        <pkgLicense>https://jdbc.postgresql.org/license.html</pkgLicense> <!-- It's the BSD license -->
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

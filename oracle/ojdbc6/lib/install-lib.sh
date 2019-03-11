@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Oracle JDBC driver must be downloaded manually from http://www.oracle.com/technetwork/database/features/jdbc before build the wrapping."
+echo "Oracle JDBC driver must be downloaded manually from https://www.oracle.com/technetwork/database/features/jdbc before build the wrapping."
 echo "Wrapping is internally configured for use com.oracle.ojdbc6 11.2.0.3 driver, use another at your own risk."
 read -e -p "What is the local path to the driver (/tmp/ojdbc6-11.2.0.3.jar by default) ? " -i "/tmp/ojdbc6-11.2.0.3.jar" file
 read -e -p "What is the group identifier (groupId) of driver (com.oracle by default) ? " -i "com.oracle" groupId

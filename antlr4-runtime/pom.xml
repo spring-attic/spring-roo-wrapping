@@ -18,7 +18,7 @@
         <pkgArtifactId>antlr4-runtime</pkgArtifactId>
         <pkgVersion>4.3</pkgVersion>
         <pkgVendor>ANTLR 4 Runtime</pkgVendor>
-        <pkgDocUrl>http://www.antlr.org/wiki/display/ANTLR4/Home</pkgDocUrl>
+        <pkgDocUrl>https://www.antlr.org/wiki/display/ANTLR4/Home</pkgDocUrl>
         <pkgLicense>https://raw.github.com/antlr/antlr4/master/LICENSE.txt</pkgLicense>
 		<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>        
     </properties>

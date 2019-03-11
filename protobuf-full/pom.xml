@@ -18,8 +18,8 @@
         <pkgVersion>2.4.1</pkgVersion>
         <osgiVersion>${pkgVersion}.0011</osgiVersion>
         <pkgVendor>Google Inc</pkgVendor>
-        <pkgDocUrl>http://code.google.com/p/protobuf</pkgDocUrl>
-        <pkgLicense>http://www.opensource.org/licenses/bsd-license.php</pkgLicense>
+        <pkgDocUrl>https://code.google.com/p/protobuf</pkgDocUrl>
+        <pkgLicense>https://www.opensource.org/licenses/bsd-license.php</pkgLicense>
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

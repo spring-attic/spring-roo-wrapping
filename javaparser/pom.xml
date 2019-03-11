@@ -18,8 +18,8 @@
         <pkgVersion>1.0.7</pkgVersion>
         <osgiVersion>${pkgVersion}.0011</osgiVersion>
         <pkgVendor>JavaParser Project</pkgVendor>
-        <pkgDocUrl>http://code.google.com/p/javaparser/</pkgDocUrl>
-        <pkgLicense>http://www.gnu.org/licenses/lgpl.html</pkgLicense>
+        <pkgDocUrl>https://code.google.com/p/javaparser/</pkgDocUrl>
+        <pkgLicense>https://www.gnu.org/licenses/lgpl.html</pkgLicense>
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
