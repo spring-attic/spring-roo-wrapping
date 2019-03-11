@@ -18,8 +18,8 @@
         <pkgArtifactId>bcprov-jdk15</pkgArtifactId>
         <pkgVersion>1.45</pkgVersion>
         <pkgVendor>Legion of the Bouncy Castle</pkgVendor>
-        <pkgDocUrl>http://www.bouncycastle.org/java.html</pkgDocUrl>
-        <pkgLicense>http://www.bouncycastle.org/licence.html</pkgLicense> <!-- "our license is an adaptation of the MIT X11 License  and should be read as such." -->
+        <pkgDocUrl>https://www.bouncycastle.org/java.html</pkgDocUrl>
+        <pkgLicense>https://www.bouncycastle.org/licence.html</pkgLicense> <!-- "our license is an adaptation of the MIT X11 License  and should be read as such." -->
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

@@ -3,7 +3,7 @@
     <licenses>
         <license>
             <name>&gt;GNU General Public License (GPL), Version 3.0</name>
-            <url>http://www.gnu.org/copyleft/gpl.html</url>
+            <url>https://www.gnu.org/copyleft/gpl.html</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -162,7 +162,7 @@
             </goals>
             <configuration>
               <serverId>wrapping-repo</serverId>
-              <url>http://repo.spring.io/spring-roo</url>
+              <url>https://repo.spring.io/spring-roo</url>
               <fromDir>../target/osgi-repository-bin</fromDir>
               <toDir>/</toDir>
               <includes>index.xml</includes>

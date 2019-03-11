@@ -18,15 +18,15 @@
         <pkgVersion>0.12.1</pkgVersion>
         <osgiVersion>${pkgVersion}.0011</osgiVersion>
         <pkgVendor>The JGit Project</pkgVendor>
-        <pkgDocUrl>http://www.eclipse.org/jgit/</pkgDocUrl>
-        <pkgLicense>http://www.eclipse.org/org/documents/edl-v10.php</pkgLicense> 
+        <pkgDocUrl>https://www.eclipse.org/jgit/</pkgDocUrl>
+        <pkgLicense>https://www.eclipse.org/org/documents/edl-v10.php</pkgLicense> 
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
 	<repositories>
 	  <repository>
 	    <id>jgit-repository</id>
-	    <url>http://download.eclipse.org/jgit/maven</url>
+	    <url>https://download.eclipse.org/jgit/maven</url>
       </repository>
 	</repositories>
 

@@ -13,8 +13,8 @@
         <pkgArtifactId>org.apache.felix.framework</pkgArtifactId>
         <pkgVersion>5.2.0</pkgVersion>
         <pkgVendor>The Apache Software Foundation</pkgVendor>
-        <pkgDocUrl>http://felix.apache.org/documentation.html</pkgDocUrl>
-        <pkgLicense>http://felix.apache.org/license.html</pkgLicense>
+        <pkgDocUrl>https://felix.apache.org/documentation.html</pkgDocUrl>
+        <pkgLicense>https://felix.apache.org/license.html</pkgLicense>
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

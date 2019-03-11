@@ -17,7 +17,7 @@
 		<repository>
 	  	    <id>springsource-repository-release</id>
 		    <name>libs-release</name>
-		    <url>http://repo.springsource.org/libs-release</url>
+		    <url>https://repo.springsource.org/libs-release</url>
 		    <snapshots>
 	    	    	<enabled>false</enabled>
 	  	    </snapshots>
@@ -30,7 +30,7 @@
         <osgiVersion>${pkgVersion}.0013</osgiVersion>
         <pkgVendor>JLine Project</pkgVendor>
         <pkgDocUrl>http://jline.sourceforge.net/</pkgDocUrl>
-        <pkgLicense>http://www.opensource.org/licenses/bsd-license.php</pkgLicense>
+        <pkgLicense>https://www.opensource.org/licenses/bsd-license.php</pkgLicense>
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

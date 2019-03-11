@@ -18,8 +18,8 @@
         <pkgArtifactId>firebird</pkgArtifactId>
         <pkgVersion>2.1.6</pkgVersion>
         <pkgVendor>The Firebird Project</pkgVendor>
-        <pkgDocUrl>http://www.firebirdsql.org/</pkgDocUrl>
-        <pkgLicense><![CDATA[http://www.firebirdsql.org/index.php?op=doc&amp;id=idpl]]></pkgLicense> 
+        <pkgDocUrl>https://www.firebirdsql.org/</pkgDocUrl>
+        <pkgLicense><![CDATA[https://www.firebirdsql.org/index.php?op=doc&amp;id=idpl]]></pkgLicense> 
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

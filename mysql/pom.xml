@@ -18,8 +18,8 @@
         <pkgArtifactId>mysql-connector-java</pkgArtifactId>
         <pkgVersion>5.1.18</pkgVersion>
         <pkgVendor>MySQL</pkgVendor>
-        <pkgDocUrl>http://www.mysql.com/</pkgDocUrl>
-        <pkgLicense>http://www.mysql.com/about/legal/licensing/oem/</pkgLicense> <!-- Based on GPL license -->
+        <pkgDocUrl>https://www.mysql.com/</pkgDocUrl>
+        <pkgLicense>https://www.mysql.com/about/legal/licensing/oem/</pkgLicense> <!-- Based on GPL license -->
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

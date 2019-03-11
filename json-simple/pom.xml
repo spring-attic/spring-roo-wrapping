@@ -18,8 +18,8 @@
         <pkgArtifactId>json-simple</pkgArtifactId>
         <pkgVersion>1.1</pkgVersion>
         <pkgVendor>JSON-Simple Project</pkgVendor>
-        <pkgDocUrl>http://code.google.com/p/json-simple/</pkgDocUrl>
-        <pkgLicense>http://www.apache.org/licenses/LICENSE-2.0.html</pkgLicense>
+        <pkgDocUrl>https://code.google.com/p/json-simple/</pkgDocUrl>
+        <pkgLicense>https://www.apache.org/licenses/LICENSE-2.0.html</pkgLicense>
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

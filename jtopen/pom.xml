@@ -19,7 +19,7 @@
         <pkgVersion>6.7</pkgVersion>
         <pkgVendor>The JTOpen Project</pkgVendor>
         <pkgDocUrl>http://jt400.sourceforge.net/</pkgDocUrl>
-        <pkgLicense>http://www.opensource.org/licenses/ibmpl.php</pkgLicense> 
+        <pkgLicense>https://www.opensource.org/licenses/ibmpl.php</pkgLicense> 
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
