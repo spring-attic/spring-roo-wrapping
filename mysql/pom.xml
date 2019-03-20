@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.roo</groupId>
@@ -18,8 +18,8 @@
         <pkgArtifactId>mysql-connector-java</pkgArtifactId>
         <pkgVersion>5.1.18</pkgVersion>
         <pkgVendor>MySQL</pkgVendor>
-        <pkgDocUrl>http://www.mysql.com/</pkgDocUrl>
-        <pkgLicense>http://www.mysql.com/about/legal/licensing/oem/</pkgLicense> <!-- Based on GPL license -->
+        <pkgDocUrl>https://www.mysql.com/</pkgDocUrl>
+        <pkgLicense>https://www.mysql.com/about/legal/licensing/oem/</pkgLicense> <!-- Based on GPL license -->
     	<target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 

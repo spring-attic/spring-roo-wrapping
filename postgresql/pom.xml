@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.roo</groupId>
@@ -18,8 +18,8 @@
         <pkgArtifactId>postgresql</pkgArtifactId>
         <pkgVersion>9.1-901</pkgVersion>
         <pkgVendor>The PostgreSQL Global Development Group</pkgVendor>
-        <pkgDocUrl>http://jdbc.postgresql.org/</pkgDocUrl>
-        <pkgLicense>http://jdbc.postgresql.org/license.html</pkgLicense> <!-- It's the BSD license -->
+        <pkgDocUrl>https://jdbc.postgresql.org/</pkgDocUrl>
+        <pkgLicense>https://jdbc.postgresql.org/license.html</pkgLicense> <!-- It's the BSD license -->
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
