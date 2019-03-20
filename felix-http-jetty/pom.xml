@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.roo.wrapping</groupId>
     <artifactId>${project.groupId}.${pkgArtifactId}</artifactId>
@@ -13,8 +13,8 @@
         <pkgArtifactId>org.apache.felix.http.jetty</pkgArtifactId>
         <pkgVersion>2.3.2</pkgVersion>
         <pkgVendor>The Apache Software Foundation</pkgVendor>
-        <pkgDocUrl>http://felix.apache.org/documentation.html</pkgDocUrl>
-        <pkgLicense>http://felix.apache.org/license.html</pkgLicense>
+        <pkgDocUrl>https://felix.apache.org/documentation.html</pkgDocUrl>
+        <pkgLicense>https://felix.apache.org/license.html</pkgLicense>
         <target.osgi-repository.directory>${basedir}/../target/osgi-repository-bin</target.osgi-repository.directory>
     </properties>
 
