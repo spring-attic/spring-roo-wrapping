@@ -21,7 +21,7 @@ The output JAR is then usable in Roo or other OSGi containers
 == Prerequisites
 
 In order to complete these instructions, you must have rights to
-deploy files to http://repo.spring.io/spring-roo/.
+deploy files to https://repo.spring.io/spring-roo/.
 
 All wrapped JARs are deployed under the following directory:
 
@@ -36,7 +36,7 @@ To perform wrapping you need:
 * GPG setup (see main Spring Roo readme.txt for instructions)
  
 If you want to host an OSGi-compliant JAR that
-does not need wrapping at http://repo.spring.io/spring-roo/,
+does not need wrapping at https://repo.spring.io/spring-roo/,
 be sure to create an .ASC file of the JAR and _pom.xml_ using 
 `gpg --ab <filename>` and upload the ASC files as well.
 
@@ -79,6 +79,6 @@ everyone is on the latest release you have made.
 
 If you have general questions on Roo's wrapping approach, please use
 the Stackoverflow. You can access it at
-http://stackoverflow.com/questions/tagged/spring-roo. Thanks for your
+https://stackoverflow.com/questions/tagged/spring-roo. Thanks for your
 interest in Spring Roo!
 
